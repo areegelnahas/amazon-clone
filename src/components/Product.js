@@ -7,7 +7,7 @@ const Product = ({ id, title, price, category, description, image }) => {
   const [rating] = useState(Math.floor(Math.random() * (5 - 1 + 1)) + 1);
   const [prime] = useState(Math.random() > 0.5);
   return (
-    <div className="relative flex flex-col bg-white z-30 p-10 m-5">
+    <div className="relative flex flex-col items-center bg-white z-30 p-10 m-5">
       <p className="absolute right-2 top-2 text-sm text-gray-400 italic">
         {category}
       </p>
