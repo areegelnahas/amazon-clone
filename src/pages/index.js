@@ -21,7 +21,7 @@ export default function Home({ products }) {
 }
 
 export async function getServerSideProps(context) {
-  const res = await fetch("https://fakestoreapi.com/products");
-  const products = await res.json();
+  const response = await fetch("https://fakestoreapi.com/products");
+  const products = await response.json();
   return { props: { products } };
 }
