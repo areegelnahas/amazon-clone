@@ -28,7 +28,7 @@ const Checkout = () => {
           />
           <div className="bg-white flex flex-col p-5 space-y-10">
             <h1 className="text-3xl border-b pb-4">
-              {total === 0 ? `Your Basket is Empty` : `Shopping Basket`}
+              {total === 0 ? `Your Basket is Empty!` : `Shopping Basket`}
             </h1>
             {items.map(
               ({
